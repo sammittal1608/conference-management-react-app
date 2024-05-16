@@ -1,0 +1,150 @@
+/* .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white !important;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+.dashboard-container{
+    display: flex;
+    gap: 30px;
+   margin-top: auto;
+  height: 100vh;
+    
+}
+.button-container{
+    padding: 8rem 20rem;
+}
+.new-meeting{
+    background-color: #04AA6D;
+    border: none;
+    color: white !important;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+.meeting-list{
+    background-color: #04AA6D;
+    border: none;
+    color: white !important;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+.join-meeting{
+    background-color: #04AA6D;
+    border: none;
+    color: white !important;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+.box-container{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+} */
+.schedule-container{
+    margin: 3rem 0rem;
+    gap: 2rem;
+}
+.reschedule-icon{
+    font-size: 2rem;;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #c4ef07; /* Gray background color */
+    display: flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+}
+.cancelled-schedule-icon{
+    font-size: 2rem;;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ef2607; /* Gray background color */
+    display: flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+}
+.people-icon{
+    font-size: 2rem;;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0bef07; /* Gray background color */
+    display: flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.seach-bar-button{
+    height: 2.35rem;
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    min-width: 100px;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 14px;
+  }
+
+  .clear-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    cursor: pointer;
+  }
+  .font-outline{
+    border: 1px solid black;
+  }
+
+  .schedule-meeting-data{
+      display: flex;
+  }
+  .sechdule-meetung-box{
+    display: flex;
+  }
+  .meeting-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Add space between cards */
+}
+
+.MeetingCard {
+    width: calc(50% - 20px); /* Adjust width to fit two cards in a row with gap */
+    max-width: 300px; /* Set maximum width for responsiveness */
+    flex: 1 0 auto; /* Allow cards to shrink if needed */
+}
