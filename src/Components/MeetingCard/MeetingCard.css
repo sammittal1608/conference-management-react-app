@@ -1,15 +1,17 @@
-.container {
+.card-container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(182, 182, 182, 0.747);
+    border-radius: 6px;
 }
 
 .header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    padding:20px;
+    border-bottom: 1px solid rgb(201, 198, 198);
 }
 
 .user-profile {
@@ -18,14 +20,14 @@
     align-items: center;
 }
 .user-pic{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 .profile-pic {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -36,7 +38,7 @@
 }
 
 .header p {
-    font-size: 24px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -44,25 +46,23 @@
     display: flex;
     align-items: center;
 }
-
-.time i {
-    margin-right: 5px;
+.header span{
+    font-size: 12px;
 }
+.header i{
+    font-size: 12px;
+}
+
+
 
 .time span {
     margin-left: 10px;
-}
-
-hr {
-    margin-top: 2rem;
-    margin-bottom: 0;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8.5rem;
 }
 
 .info div {
@@ -70,7 +70,8 @@ hr {
 }
 
 .img-container {
-    padding: 1rem 0.2rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -108,3 +109,4 @@ hr {
     font-weight: bold;
     color: #999;
 }
+

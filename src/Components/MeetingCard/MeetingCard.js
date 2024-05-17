@@ -4,7 +4,7 @@ import alexPic from '../../imgs/alex-pic.jpg';
 
 function MeetingCard() {
     return (
-        <div className="container">
+        <div className="card-container">
             <div className="header">
                 <div className="user-profile">
                     <img src={alexPic} alt="people-pic" className="user-pic" />
@@ -16,8 +16,8 @@ function MeetingCard() {
                         <span>10:30 AM </span> - <span>11:00 AM</span>
                     </div>
                 </div>
+               <div className='line-break'></div>
             </div>
-            <hr />
             <div className="row content">
                 <div className="info">
                     <div className="members">
@@ -40,3 +40,5 @@ function MeetingCard() {
 }
 
 export default MeetingCard;
+
+

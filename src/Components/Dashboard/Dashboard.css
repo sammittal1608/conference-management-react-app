@@ -1,83 +1,20 @@
-/* .button {
-    background-color: #04AA6D;
-    border: none;
-    color: white !important;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 8px;
-  }
-  body{
-    padding: 0;
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    background: rgb(255, 255, 255);
-    padding: 20px;
-}
-.dashboard-container{
-    display: flex;
-    gap: 30px;
-   margin-top: auto;
-  height: 100vh;
-    
-}
-.button-container{
-    padding: 8rem 20rem;
-}
-.new-meeting{
-    background-color: #04AA6D;
-    border: none;
-    color: white !important;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 8px;
-}
-.meeting-list{
-    background-color: #04AA6D;
-    border: none;
-    color: white !important;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 8px;
-}
-.join-meeting{
-    background-color: #04AA6D;
-    border: none;
-    color: white !important;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 8px;
-}
-.box-container{
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-} */
 .schedule-container{
     margin: 3rem 0rem;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
 }
+.meeting-wrapper{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+
 .reschedule-icon{
     font-size: 2rem;;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #c4ef07; /* Gray background color */
+    background-color: #efcc07; /* Gray background color */
     display: flex; /* Center the icon */
     justify-content: center;
     align-items: center;
@@ -102,6 +39,9 @@
     justify-content: center;
     align-items: center;
 
+}
+.today-meeting-title{
+    margin-bottom: 1rem;
 }
 
 .seach-bar-button{
@@ -137,14 +77,53 @@
   .sechdule-meetung-box{
     display: flex;
   }
-  .meeting-card-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
-    gap: 20px; /* Add space between cards */
+
+  .meeting-cards-wrapper {
+      margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap:25px;
+    grid-column-gap: 20px;
 }
+/* .meeting-card-2{
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+}
+.meeting-card-3{
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+} */
 
 .MeetingCard {
     width: calc(50% - 20px); /* Adjust width to fit two cards in a row with gap */
     max-width: 300px; /* Set maximum width for responsiveness */
     flex: 1 0 auto; /* Allow cards to shrink if needed */
 }
+
+.search-bar-wrapper{
+    display: flex;
+}
+
+.search-box{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #F5F5FF;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.input-group .btn {
+    border-radius: 0;
+    background-color: #EAEBFF;
+}
+
+.bi-search{
+    color: #8582BB;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
+
