@@ -3,45 +3,45 @@ import './Dashboard.css';
 import MeetingCard from '../MeetingCard/MeetingCard';
 import Calendar from '../Calendar/Calendar';
 import Reminder from '../Reminder/Reminder';
+import alexImage from '../../imgs/alex-pic.jpg';
 
 const reminders = [
     {
-      icon: '📅',
-      text: 'Today is your meeting with PM.',
-      role: 'Project Manager',
-      roleClass: 'project-manager',
-      time: '10:20 AM',
-      type: 'calendar',
+        icon: <i class="bi bi-calendar-event"></i>,
+        text: 'Today is your meeting with PM.',
+        role: 'Project Manager',
+        roleClass: 'project-manager',
+        time: '10:20 AM',
+        type: 'calendar',
     },
     {
-      icon: '🖌️',
-      text: 'You need to add 4 artwork in vector.',
-      role: 'Design Lead',
-      roleClass: 'design-lead',
-      time: '12:30 AM',
-      type: 'artwork',
+        icon: <i class="bi bi-brush"></i>,
+        text: 'You need to add 4 artwork in vector.',
+        role: 'Design Lead',
+        roleClass: 'design-lead',
+        time: '12:30 AM',
+        type: 'artwork',
     },
     {
-      icon: '❌',
-      text: 'You have closed the logo design is final.',
-      role: 'Team Leader',
-      roleClass: 'team-leader',
-      time: '12:30 AM',
-      type: 'error',
+        icon: <i class="bi bi-x-circle"></i>,
+        text: 'You have closed the logo design is final.',
+        role: 'Team Leader',
+        roleClass: 'team-leader',
+        time: '12:30 AM',
+        type: 'error',
     },
     {
-      icon: '✔️',
-      text: 'Successfully completion of project.',
-      role: 'Design & Team Lead',
-      roleClass: 'design-team-lead',
-      time: '12:30 AM',
-      type: 'complete',
+        icon: <i class="bi bi-check-circle"></i>,
+        text: 'Successfully completion of project.',
+        role: 'Design & Team Lead',
+        roleClass: 'design-team-lead',
+        time: '12:30 AM',
+        type: 'complete',
     },
-  ];
+];
 
 const Dashboard = () => {
     return (
-
         <div className='dashboard-container '>
             <div className='row'>
                 <div className='col-8'>
@@ -110,13 +110,11 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div className='row '>
                         <h3 className='today-meeting-title'>
                             Today - 6 Today
                         </h3>
-
                         <div className='meeting-cards-wrapper'>
                             <MeetingCard />
                             <MeetingCard />
@@ -126,16 +124,17 @@ const Dashboard = () => {
                             <MeetingCard />
                         </div>
                     </div>
-
                 </div>
                 <div className='col-auto'>
-                    <div className='row'>
-                        <div className='user-logout'>
-
+                    <div className="row profile-container">
+                        <div className="profile-section">
+                            <img src={alexImage} alt="Alex" className="profile-image" />
+                            <span className="profile-name">Essie Howell</span>
                         </div>
-                        <div className='profile-detail'>
-
+                        <div className="log-out-icon">
+                            <i className="bi bi-box-arrow-right"></i>
                         </div>
+
                     </div>
                     <div className='row calendar-wrapper'>
                         <Calendar />
@@ -145,10 +144,9 @@ const Dashboard = () => {
                     </div>
                     <div className='row create-meeting-btn'>
                         <button type="button" class="btn btn-primary">
-                        <i class="bi bi-plus"></i>
-                             Create meeting
+                            <i class="bi bi-plus"></i>
+                            Create meeting
                         </button>
-
                     </div>
                 </div>
             </div>
