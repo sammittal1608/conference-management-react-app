@@ -1,6 +1,43 @@
 import React from 'react';
 import './Dashboard.css';
 import MeetingCard from '../MeetingCard/MeetingCard';
+import Calendar from '../Calendar/Calendar';
+import Reminder from '../Reminder/Reminder';
+
+const reminders = [
+    {
+      icon: '📅',
+      text: 'Today is your meeting with PM.',
+      role: 'Project Manager',
+      roleClass: 'project-manager',
+      time: '10:20 AM',
+      type: 'calendar',
+    },
+    {
+      icon: '🖌️',
+      text: 'You need to add 4 artwork in vector.',
+      role: 'Design Lead',
+      roleClass: 'design-lead',
+      time: '12:30 AM',
+      type: 'artwork',
+    },
+    {
+      icon: '❌',
+      text: 'You have closed the logo design is final.',
+      role: 'Team Leader',
+      roleClass: 'team-leader',
+      time: '12:30 AM',
+      type: 'error',
+    },
+    {
+      icon: '✔️',
+      text: 'Successfully completion of project.',
+      role: 'Design & Team Lead',
+      roleClass: 'design-team-lead',
+      time: '12:30 AM',
+      type: 'complete',
+    },
+  ];
 
 const Dashboard = () => {
     return (
@@ -100,34 +137,22 @@ const Dashboard = () => {
 
                         </div>
                     </div>
-                    <div className='row calender-wrapper'>
-                        calender
+                    <div className='row calendar-wrapper'>
+                        <Calendar />
                     </div>
                     <div className='row'>
-                        reminders
+                        <Reminder reminders={reminders} />
                     </div>
-                    <div className='row'>
+                    <div className='row create-meeting-btn'>
                         <button type="button" class="btn btn-primary">
-
-                            + Create meeting
+                        <i class="bi bi-plus"></i>
+                             Create meeting
                         </button>
 
                     </div>
                 </div>
             </div>
         </div>
-
-        // <div className='dashboard-container'>
-        //     <div className='button-container'>
-        //         <button className='new-meeting'></button>
-        //         <button className='meeting-list'></button>
-        //         <button className='join-meeting'></button>
-
-        //     </div>
-        //     <div className="box-container">
-
-        //     </div>
-        // </div>
     );
 }
 

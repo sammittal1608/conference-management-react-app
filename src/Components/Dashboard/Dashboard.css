@@ -8,14 +8,17 @@
     background-color: aliceblue;
     justify-content: space-between;
 }
+.calendar-wrapper{
+    margin: 0 3rem;
+}
 
 .reschedule-icon{
     font-size: 2rem;;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #efcc07; /* Gray background color */
-    display: flex; /* Center the icon */
+    background-color: #efcc07;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -24,8 +27,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ef2607; /* Gray background color */
-    display: flex; /* Center the icon */
+    background-color: #ef2607; 
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -34,8 +37,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #0bef07; /* Gray background color */
-    display: flex; /* Center the icon */
+    background-color: #0bef07; 
+    display: flex; 
     justify-content: center;
     align-items: center;
 
@@ -95,9 +98,9 @@
 } */
 
 .MeetingCard {
-    width: calc(50% - 20px); /* Adjust width to fit two cards in a row with gap */
-    max-width: 300px; /* Set maximum width for responsiveness */
-    flex: 1 0 auto; /* Allow cards to shrink if needed */
+    width: calc(50% - 20px); 
+    max-width: 300px; 
+    flex: 1 0 auto; 
 }
 
 .search-bar-wrapper{
@@ -117,6 +120,9 @@
     border-radius: 0;
     background-color: #EAEBFF;
 }
+.bi-bell{
+    font-size: 1.3rem;
+}
 
 .bi-search{
     color: #8582BB;
@@ -124,6 +130,13 @@
 
 .form-control{
     border-radius: 0;
+}
+.create-meeting-btn{
+    width: 360px;
+    margin-left: 50px;
+}
+.bi-plus{
+    margin-right: 0.5rem;
 }
 
 

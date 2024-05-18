@@ -94,14 +94,14 @@
     color: #333;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #ccc; /* Light gray background */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    border: none; /* Remove border */
+    background-color: #ccc; 
+    transition: background-color 0.3s, color 0.3s; 
+    border: none; 
 }
 
 .button a:hover {
-    background-color: orange; /* Change to orange on hover */
-    color: white; /* Change text color to white on hover */
+    background-color: orange;
+    color: white; 
 }
 
 .button .plus {
