@@ -10,7 +10,7 @@
 }
 .calendar-wrapper{
     margin: 0 3rem;
-}
+}  
 
 .reschedule-icon{
     font-size: 2rem;;
@@ -139,4 +139,49 @@
     margin-right: 0.5rem;
 }
 
-
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.log-out-profile-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* Add some horizontal padding for better spacing */
+  }
+  
+  .log-out-icon {
+    font-size: 24px;
+    cursor: pointer;
+    width: 10%;
+    padding: 1rem;
+    margin-right: 10px; /* Space between the icon and the profile section */
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .profile-container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    margin: 0rem 3rem  0.8rem;
+    height: 4rem;
+    
+  }
